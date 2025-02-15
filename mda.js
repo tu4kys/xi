@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname)));
 const createPath = (page) => path.resolve(__dirname, `${page}.html`);
 
 app.get('/', (req, res) => {
-    res.sendFile(createPath('newmda')); // Теперь просто передаем имя файла без пути
+    res.sendFile(createPath('index')); // Теперь просто передаем имя файла без пути
 });
 
 app.listen(PORT, (error) => {
